@@ -1,0 +1,58 @@
+/* style.css - Realistic pastel design for Wish Card Maker */
+:root{
+  --bg1: #fff6fb;
+  --bg2: #eef8ff;
+  --accent: #ff7bac;
+  --muted: #6b6b6b;
+  --card-shadow: 0 12px 30px rgba(18,18,18,0.08);
+  --radius: 14px;
+  --wrap: 1100px;
+  --font-sans: "Poppins", Arial, sans-serif;
+  --font-script: "Dancing Script", cursive;
+}
+*{box-sizing:border-box}
+body{font-family:var(--font-sans);margin:0;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:#222}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:20px}
+.site-header{background:linear-gradient(90deg,#ffd6e8,#ffdbe6);padding:22px 0;box-shadow:var(--card-shadow);margin-bottom:26px;border-bottom-left-radius:20px;border-bottom-right-radius:20px}
+.brand{margin:0;font-size:26px;color:#7a0330;display:inline-block}
+.nav{float:right}
+.nav a{margin-left:14px;text-decoration:none;color:#5a1628;font-weight:600;padding:8px 12px;border-radius:8px}
+.nav a:hover{background:rgba(255,255,255,0.7)}
+
+
+.hero{display:flex;gap:24px;align-items:center;padding:28px 0}
+.hero-left{flex:1}
+.hero-left h2{font-size:28px;margin:0 0 12px;color:#5a1630}
+.hero-left p{color:var(--muted);line-height:1.6}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 20px;border-radius:12px;text-decoration:none;font-weight:700;box-shadow:0 8px 18px rgba(255,122,167,0.18)}
+.btn:hover{transform:translateY(-3px)}
+
+.hero-right{width:380px}
+.card-preview{background:#fff;border-radius:var(--radius);padding:22px;box-shadow:var(--card-shadow);border:1px solid rgba(0,0,0,0.03)}
+.card-inner{height:220px;border-radius:10px;background:linear-gradient(180deg,#fff 0%,#fffaf4 100%);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:18px;text-align:center}
+.card-inner h3{font-family:var(--font-script);margin:0;font-size:24px;color:#b2226f}
+.card-inner .message{margin-top:8px;color:#444;max-width:300px}
+.card-inner .from{margin-top:12px;color:#777;font-size:13px}
+
+.site-footer{margin-top:40px;padding:18px 0;text-align:center;color:#555}
+.form-card{background:#fff;border-radius:12px;padding:18px;box-shadow:var(--card-shadow);border:1px solid rgba(0,0,0,0.03)} 
+.form-row{margin-bottom:12px}
+label{display:block;font-weight:600;margin-bottom:6px;color:#333}
+input[type="text"], input[type="email"], input[type="password"], select, textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6}
+textarea{min-height:110px;resize:vertical}
+.small{font-size:13px;color:#666}
+.center{text-align:center}
+
+/* table */
+.table{width:100%;border-collapse:collapse;margin-top:12px}
+.table th, .table td{padding:10px;border-bottom:1px solid #f0f0f0;text-align:left}
+
+/* admin */
+.admin-actions a{margin-right:8px;color:#b2226f;font-weight:600}
+
+/* responsive */
+@media(max-width:900px){
+  .hero{flex-direction:column}
+  .nav{float:none;text-align:center;margin-top:12px}
+  .hero-right{width:100%}
+}
