@@ -66,16 +66,16 @@ A dynamic web application for creating personalized greeting cards for love, bir
 ## Screenshots
 
 ### Home Page
-![Home Page](screenshots/home.jpg)
+![Home Page](home.jpg)
 
 ### User Dashboard
-![User Dashboard](screenshots/dashboard.jpg)
+![User Dashboard](dashboard.jpg)
 
 ### Admin Login
-![Admin Login](screenshots/admin_login.jpg)
+![Admin Login](admin_login.jpg)
 
 ### Admin Dashboard
-![Admin Dashboard](screenshots/admin_dashboard.jpg)
+![Admin Dashboard](admin_dashboard.jpg)
 
 ---
 
